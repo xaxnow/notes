@@ -3,9 +3,9 @@
 ## 杀毒软件排除
 ### For SQL Server
 - SQL Server processes
-         %ProgramFiles%\Microsoft SQL Server\<Instance_ID>.<Instance Name>\MSSQL\Binn\SQLServr.exe;
-        %ProgramFiles%\Microsoft SQL Server\<Instance_ID>.<Instance Name>\Reporting Services\ReportServer\Bin\ReportingServicesService.exe;
-        %ProgramFiles%\Microsoft SQL Server\<Instance_ID>.<Instance Name>\OLAP\Bin\MSMDSrv.exe;
+  - %ProgramFiles%\Microsoft SQL Server\<Instance_ID>.<Instance Name>\MSSQL\Binn\SQLServr.exe;
+  - %ProgramFiles%\Microsoft SQL Server\<Instance_ID>.<Instance Name>\Reporting Services\ReportServer\Bin\ReportingServicesService.exe;
+  - %ProgramFiles%\Microsoft SQL Server\<Instance_ID>.<Instance Name>\OLAP\Bin\MSMDSrv.exe;
 - All SQL Server data files
         These will have extensions of .mdf, .ldf, .ndf, .bak, .trn.
 - SQL Server backup files
@@ -23,7 +23,7 @@
 - Files in the Replication Snapshot folder
 - Schedule scans during the lowest activity hours.
 
-###For Windows Failover Clusters, add these additional Antivirus exclusions (don’t forget this needs to be done on each node):
+### For Windows Failover Clusters, add these additional Antivirus exclusions (don’t forget this needs to be done on each node):
 
 - The entire quorum/witness disk;
 - The \MSDTC directory on disks used by an MSDTC resource;
